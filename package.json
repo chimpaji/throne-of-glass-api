@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "prepare":"npx prisma generate",
     "dev": "nodemon src/app.ts",
     "ts:build": "rm -rf ./dist && tsc",
-    "prestart": "tsc --build",
+    "build": "rm -rf ./dist && tsc",
     "start": "node dist/app.js",
     "seed:db": "nodemon ./src/seed.ts"
   },
