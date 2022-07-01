@@ -3,7 +3,7 @@ import { PrismaClient } from '@prisma/client';
 import express, { Request, Response } from 'express';
 import { request } from 'http';
 
-const prisma = new PrismaClient();
+export const prisma = new PrismaClient();
 const app = express();
 
 const port = process.env.PORT || 3000;

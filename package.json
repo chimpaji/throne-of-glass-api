@@ -7,7 +7,8 @@
     "dev": "nodemon src/app.ts",
     "ts:build": "rm -rf ./dist && tsc",
     "prestart": "tsc --build",
-    "start": "node dist/app.js"
+    "start": "node dist/app.js",
+    "seed:db": "nodemon ./src/seed.ts"
   },
   "author": "",
   "license": "ISC",
